@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="http://kursuswebprogramming.com/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='http://kursuswebprogramming.com';var et_post_id='2002';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 - Kursus Web Programming</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 - Kursus Web Programming" />
+<meta property="og:description" content="Halo teman-teman pada tutorial kali ini saya akan menjelaskan tentang cara membuat  Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1, untuk Membuat Logout Otomatis Menggunakan Session PHP ada beberapa tahap yang akan kita buat yaitu : Membuat database Membuat koneksi, yang berfungsi untuk menghubungkan file yang telah kita buat supaya dapat terkoneksi dengan database &hellip;" />
+<meta property="og:url" content="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/" />
+<meta property="og:site_name" content="Kursus Web Programming" />
+<meta property="article:tag" content="Logout Otomatis" />
+<meta property="article:tag" content="Menggunakan Session" />
+<meta property="article:tag" content="php" />
+<meta property="article:tag" content="tutorial php" />
+<meta property="article:section" content="PHP" />
+<meta property="article:published_time" content="2017-01-11T07:37:14+00:00" />
+<meta property="article:modified_time" content="2017-01-14T07:37:35+00:00" />
+<meta property="og:updated_time" content="2017-01-14T07:37:35+00:00" />
+<meta property="og:image" content="http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-2.png" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Halo teman-teman pada tutorial kali ini saya akan menjelaskan tentang cara membuat  Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1, untuk Membuat Logout Otomatis Menggunakan Session PHP ada beberapa tahap yang akan kita buat yaitu : Membuat database Membuat koneksi, yang berfungsi untuk menghubungkan file yang telah kita buat supaya dapat terkoneksi dengan database [&hellip;]" />
+<meta name="twitter:title" content="Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 - Kursus Web Programming" />
+<meta name="twitter:image" content="http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-2.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://kursuswebprogramming.com/#organization","name":"","url":"http://kursuswebprogramming.com/","sameAs":[]},{"@type":"WebSite","@id":"http://kursuswebprogramming.com/#website","url":"http://kursuswebprogramming.com/","name":"Kursus Web Programming","publisher":{"@id":"http://kursuswebprogramming.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"http://kursuswebprogramming.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#webpage","url":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/","inLanguage":"en-US","name":"Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 - Kursus Web Programming","isPartOf":{"@id":"http://kursuswebprogramming.com/#website"},"image":{"@type":"ImageObject","@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#primaryimage","url":"http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-2.png","width":200,"height":200,"caption":"Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1"},"primaryImageOfPage":{"@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#primaryimage"},"datePublished":"2017-01-11T07:37:14+00:00","dateModified":"2017-01-14T07:37:35+00:00"},{"@type":"Article","@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#article","isPartOf":{"@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#webpage"},"author":{"@id":"http://kursuswebprogramming.com/author/irwandsw/#author"},"headline":"Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1","datePublished":"2017-01-11T07:37:14+00:00","dateModified":"2017-01-14T07:37:35+00:00","commentCount":"3","mainEntityOfPage":{"@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#webpage"},"publisher":{"@id":"http://kursuswebprogramming.com/#organization"},"image":{"@id":"http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#primaryimage"},"keywords":"Logout Otomatis,Menggunakan Session,php,tutorial php","articleSection":"MySQL,PHP,Tips dan Trik,Website"},{"@type":["Person"],"@id":"http://kursuswebprogramming.com/author/irwandsw/#author","name":"Irwan Deswitansyah","image":{"@type":"ImageObject","@id":"http://kursuswebprogramming.com/#authorlogo","url":"http://0.gravatar.com/avatar/c8d2401006d3d7bb97c2c4f587279611?s=96&d=mm&r=g","caption":"Irwan Deswitansyah"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Kursus Web Programming &raquo; Feed" href="http://kursuswebprogramming.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kursus Web Programming &raquo; Comments Feed" href="http://kursuswebprogramming.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kursus Web Programming &raquo; Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 Comments Feed" href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/kursuswebprogramming.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="Divi v.3.19.14" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='crayon-css'  href='http://kursuswebprogramming.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css'  href='http://kursuswebprogramming.com/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://kursuswebprogramming.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://kursuswebprogramming.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css'  href='http://kursuswebprogramming.com/wp-content/themes/Divi/style.css?ver=3.19.14' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://kursuswebprogramming.com/wp-includes/css/dashicons.min.css?ver=5.2.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/kursuswebprogramming.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<link rel='https://api.w.org/' href='http://kursuswebprogramming.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kursuswebprogramming.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://kursuswebprogramming.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.2" />
+<link rel='shortlink' href='http://kursuswebprogramming.com/?p=2002' />
+<link rel="alternate" type="application/json+oembed" href="http://kursuswebprogramming.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkursuswebprogramming.com%2Fcara-membuat-logout-otomatis-menggunakan-session-php-part-1%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://kursuswebprogramming.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fkursuswebprogramming.com%2Fcara-membuat-logout-otomatis-menggunakan-session-php-part-1%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="http://kursuswebprogramming.com/wp-content/cache/et/global/et-divi-customizer-global-15605785351298.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+<body class="post-template-default single single-post postid-2002 single-format-standard et_pb_button_helper_class et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns3 et_header_style_left et_smooth_scroll et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="http://kursuswebprogramming.com/">
+						<img src="http://kursusdesaingrafis.com/wp-content/uploads/2017/03/logo-dumet-school-100.png" alt="Kursus Web Programming" id="logo" data-height-percentage="54" />
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-13"><a href="http://kursuswebprogramming.com//">Home</a></li>
+<li id="menu-item-2966" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2966"><a href="http://kursuswebprogramming.com/blog/">Blog</a></li>
+<li id="menu-item-2604" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2604"><a href="http://kursuswebprogramming.com/category/php/">PHP</a></li>
+<li id="menu-item-2606" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2606"><a href="http://kursuswebprogramming.com/category/mysql/">MySQL</a></li>
+<li id="menu-item-2607" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2607"><a href="http://kursuswebprogramming.com/category/framework/">Framework</a></li>
+<li id="menu-item-2608" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2608"><a href="http://kursuswebprogramming.com/category/javascript/">Javascript</a></li>
+<li id="menu-item-2605" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2605"><a href="http://kursuswebprogramming.com/category/tips-dan-trik/">Tips dan Trik</a></li>
+</ul>						</nav>
+					
+					
+					
+										<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="http://kursuswebprogramming.com/">
+					<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-2002" class="et_pb_post post-2002 post type-post status-publish format-standard has-post-thumbnail hentry category-mysql category-php category-tips-dan-trik category-website tag-logout-otomatis tag-menggunakan-session tag-php tag-tutorial-php">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1</h1>
+
+						<p class="post-meta"> by <span class="author vcard"><a href="http://kursuswebprogramming.com/author/irwandsw/" title="Posts by Irwan Deswitansyah" rel="author">Irwan Deswitansyah</a></span> | <span class="published">Jan 11, 2017</span> | <a href="http://kursuswebprogramming.com/category/mysql/" rel="category tag">MySQL</a>, <a href="http://kursuswebprogramming.com/category/php/" rel="category tag">PHP</a>, <a href="http://kursuswebprogramming.com/category/tips-dan-trik/" rel="category tag">Tips dan Trik</a>, <a href="http://kursuswebprogramming.com/category/website/" rel="category tag">Website</a> | <span class="comments-number"><a href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#respond">0 comments</a></span></p>
+												</div> <!-- .et_post_meta_wrapper -->
+				
+					<div class="entry-content">
+					<p>Halo teman-teman pada tutorial kali ini saya akan menjelaskan tentang cara membuat  <strong>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1, </strong>untuk<strong> Membuat Logout Otomatis Menggunakan Session PHP </strong>ada beberapa tahap yang akan kita buat yaitu :<span id="more-2002"></span></p>
+<ol>
+<li>Membuat database</li>
+<li>Membuat koneksi, yang berfungsi untuk menghubungkan file yang telah kita buat supaya dapat terkoneksi dengan database</li>
+<li>Membuat file index.php, yaitu berfungsi sebagai halaman yang pertama yang akan di akses oleh user</li>
+<li>Membuat proses, yaitu berfungsi untuk proses pengecekan, apakah username yang kita masukan telah benar atau tidak</li>
+<li>Membuat halaman home, jadi ketika username atau password yang dimasukan telah benar maka akan masuk kehalaman home, dan pada nantinya pada halaman home inilah <strong>Logout Otomatis </strong>berfungsi, dengan waktu yang telah kita tentukan nantinya.</li>
+<li>Yang terakhir kita akan membuat proses logout nya.</li>
+</ol>
+<p>Namun pada tutorial <strong>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 </strong>kali ini kita akan membahas terlebih dahulu yaitu membuat database dan membuat file koneksinya dan untuk proses selanjutnya akan saya bahas pada tutorial selanjutnya.</p>
+<p>Oke teman-teman kita langsung saja masuk pada langkah yang pertama yaitu kita akan membuat databasenya terlebih dahulu, dan silahkan teman-teman buka <strong>localhost/phpmyadmin</strong> nya, selanjutnya kita akan membuat database baru dengan nama database yaitu, <strong>login </strong>selanjutnya pada database <strong>login</strong> silahkan teman-teman buat table baru dengan nama tabel <strong>user </strong>lebih kurang struktur table yang akan kita buat nantinya seperti dibawah ini,.</p>
+<p><a href="http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1.png"><img class="alignnone wp-image-2003" src="http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1-300x59.png" alt="Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1" width="559" height="110" srcset="http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1-300x59.png 300w, http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1-768x151.png 768w, http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1-1024x201.png 1024w, http://kursuswebprogramming.com/wp-content/uploads/2017/01/Cara-Membuat-Logout-Otomatis-Menggunakan-Session-PHP-Part-1-1.png 1162w" sizes="(max-width: 559px) 100vw, 559px" /></a></p>
+<p>Nah jika database dan tabelnya telah kita buat berikutnya kita akan membuat file koneksinya, dan silahkan teman-teman simpan script dibawah ini dengan nama<strong> koneksi.php</strong></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5d0b096d04ed0553773833" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">koneksi.php</span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;?php 
+$servername = "localhost";
+$username	= "root";
+$password	= "";
+$dbname 	= "login";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+	die ("Connection failed: " .mysqli_connect_error());
+
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5d0b096d04ed0553773833-2">2</div><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5d0b096d04ed0553773833-4">4</div><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5d0b096d04ed0553773833-6">6</div><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5d0b096d04ed0553773833-8">8</div><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5d0b096d04ed0553773833-10">10</div><div class="crayon-num" data-line="crayon-5d0b096d04ed0553773833-11">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-1"><span class="crayon-o">&lt;</span><span class="crayon-sy">?</span><span class="crayon-i">php</span><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5d0b096d04ed0553773833-2"><span class="crayon-sy">$</span><span class="crayon-v">servername</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"localhost"</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-3"><span class="crayon-sy">$</span><span class="crayon-v">username</span><span class="crayon-h">	</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"root"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5d0b096d04ed0553773833-4"><span class="crayon-sy">$</span><span class="crayon-v">password</span><span class="crayon-h">	</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">""</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-5"><span class="crayon-sy">$</span><span class="crayon-v">dbname</span><span class="crayon-h"> 	</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"login"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5d0b096d04ed0553773833-6">&nbsp;</div><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-7"><span class="crayon-sy">$</span><span class="crayon-v">conn</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">mysqli_connect</span><span class="crayon-sy">(</span><span class="crayon-sy">$</span><span class="crayon-v">servername</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">$</span><span class="crayon-v">username</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">$</span><span class="crayon-v">password</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">$</span><span class="crayon-v">dbname</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5d0b096d04ed0553773833-8"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-o">!</span><span class="crayon-sy">$</span><span class="crayon-v">conn</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-9"><span class="crayon-h">	</span><span class="crayon-e">die</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-s">"Connection failed: "</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-e">mysqli_connect_error</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5d0b096d04ed0553773833-10">&nbsp;</div><div class="crayon-line" id="crayon-5d0b096d04ed0553773833-11"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0014 seconds] -->
+<p>Bagai mana teman-teman cukup mudah bukan, sekian dulu tutorial saya kali ini untuk <strong>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 </strong>nya, dan untuk membuat file index, proses, home, dan logout bisa teman-teman lihat pada tutorial selanjutnya</p>
+<p>Semoga bermanfaat</p>
+<p>Terimaksih</p>
+<div class='et_post_video'>
+<blockquote data-secret="CvuEONR4ir" class="wp-embedded-content"><p><a href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-2/">Cara Membuat Logout Otomatis Menggunakan Session PHP Part 2</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-2/embed/#?secret=CvuEONR4ir" data-secret="CvuEONR4ir" width="600" height="338" title="&#8220;Cara Membuat Logout Otomatis Menggunakan Session PHP Part 2&#8221; &#8212; Kursus Web Programming" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class='et_post_video'>
+<blockquote data-secret="ln8D31XFq8" class="wp-embedded-content"><p><a href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-3/">Cara Membuat Logout Otomatis Menggunakan Session PHP Part 3</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-3/embed/#?secret=ln8D31XFq8" data-secret="ln8D31XFq8" width="600" height="338" title="&#8220;Cara Membuat Logout Otomatis Menggunakan Session PHP Part 3&#8221; &#8212; Kursus Web Programming" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class='et_post_video'>
+<blockquote data-secret="lRXeJTnBZs" class="wp-embedded-content"><p><a href="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-4/">Cara Membuat Logout Otomatis Menggunakan Session PHP Part 4</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-4/embed/#?secret=lRXeJTnBZs" data-secret="lRXeJTnBZs" width="600" height="338" title="&#8220;Cara Membuat Logout Otomatis Menggunakan Session PHP Part 4&#8221; &#8212; Kursus Web Programming" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+					</div> <!-- .entry-content -->
+					<div class="et_post_meta_wrapper">
+					<!-- You can start editing here. -->
+
+<section id="comment-wrap">
+			
+		
+		
+					<div id="trackbacks">
+				<h3 id="trackbacks-title">Trackbacks/Pingbacks</h3>
+				<ol class="pinglist">
+						<li id="comment-263"><a href='http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-2/' rel='external nofollow' class='url'>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 2 | Kursus Web Programming</a> - [&#8230;] Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 [&#8230;]</li><!-- #comment-## -->
+	<li id="comment-264"><a href='http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-3/' rel='external nofollow' class='url'>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 3 | Kursus Web Programming</a> - [&#8230;] Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 [&#8230;]</li><!-- #comment-## -->
+	<li id="comment-267"><a href='http://kursuswebprogramming.com/cara-membuat-logout-otomatis-menggunakan-session-php-part-4/' rel='external nofollow' class='url'>Cara Membuat Logout Otomatis Menggunakan Session PHP Part 4 | Kursus Web Programming</a> - [&#8230;] Cara Membuat Logout Otomatis Menggunakan Session PHP Part 1 [&#8230;]</li><!-- #comment-## -->
+				</ol>
+			</div>
+							<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Submit a Comment</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/cara-membuat-logout-otomatis-menggunakan-session-php-part-1/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://kursuswebprogramming.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<div class="gglcptch gglcptch_v2"><div id="gglcptch_recaptcha_1196783505" class="gglcptch_recaptcha"></div>
+				<noscript>
+					<div style="width: 302px;">
+						<div style="width: 302px; height: 422px; position: relative;">
+							<div style="width: 302px; height: 422px; position: absolute;">
+								<iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lf1si0UAAAAAK8WQpaE_X5b21PlP9CtUcLhuaNP" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;"></iframe>
+							</div>
+						</div>
+						<div style="border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px; height: 60px; width: 300px;">
+							<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px !important; height: 40px !important; border: 1px solid #c1c1c1 !important; margin: 10px 25px !important; padding: 0px !important; resize: none !important;"></textarea>
+						</div>
+					</div>
+				</noscript></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit et_pb_button" value="Submit Comment" /> <input type='hidden' name='comment_post_ID' value='2002' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="01a3cb0f40" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="148"/></p>			</form>
+			</div><!-- #respond -->
+		</section>					</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->
+
+						</div> <!-- #left-area -->
+
+				<div id="sidebar">
+		<div id="text-8" class="et_pb_widget widget_text"><h4 class="widgettitle">Blogroll</h4>			<div class="textwidget"><ul>
+<li><a href="http://kursusdesaingrafis.com">Tutorial Desain Grafis</a></li>
+<li><a href="http://kursusinternetmarketingjakarta.com">Tutorial Internet Marketing</a></li>
+<li><a href="http://kursusseo.org">Tutorial SEO</a></li>
+<li><a href="http://kursuswebsite.org">Tutorial Website</a></li>
+<li><a href="http://kursuswebdesign.org">Tutorial Web Design</a></li>
+<li><a href="http://kursuswordpress.com">Tutorial WordPress</a></li>
+</ul></div>
+		</div> <!-- end .et_pb_widget -->	</div> <!-- end #sidebar -->
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+
+
+			<footer id="main-footer">
+				
+<div class="container">
+    <div id="footer-widgets" class="clearfix">
+		<div class="footer-widget"><div id="search-2" class="fwidget et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://kursuswebprogramming.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div> <!-- end .fwidget --><div id="text-5" class="fwidget et_pb_widget widget_text"><h4 class="title">Facebook DUMET School</h4>			<div class="textwidget"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdumetschool&tabs=timeline&width=220px&height=250px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="220px" height="250px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+		</div> <!-- end .fwidget --><div id="categories-2" class="fwidget et_pb_widget widget_categories"><h4 class="title">Categories</h4>		<ul>
+				<li class="cat-item cat-item-26"><a href="http://kursuswebprogramming.com/category/framework/">Framework</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://kursuswebprogramming.com/category/javascript/">Javascript</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://kursuswebprogramming.com/category/mysql/">MySQL</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://kursuswebprogramming.com/category/php/">PHP</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://kursuswebprogramming.com/category/tips-dan-trik/">Tips dan Trik</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://kursuswebprogramming.com/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://kursuswebprogramming.com/category/website/">Website</a>
+</li>
+		</ul>
+			</div> <!-- end .fwidget --><div id="text-9" class="fwidget et_pb_widget widget_text"><h4 class="title">Konsultasi Gratis</h4>			<div class="textwidget">Telp : (021) 5890-8355 <br/>
+Phone/WA/SMS : 0812-9933-3913 <br/>
+E-mail : info@dumetschool.com <br/>
+Website : <a href="http://dumetschool.com">dumetschool.com</a></div>
+		</div> <!-- end .fwidget --></div> <!-- end .footer-widget --><div class="footer-widget"></div> <!-- end .footer-widget --><div class="footer-widget"></div> <!-- end .footer-widget -->    </div> <!-- #footer-widgets -->
+</div>    <!-- .container -->
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="http://facebook.com/dumetschool" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="http://twitter.com/dumetschool" class="icon">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-google-plus">
+		<a href="#" class="icon">
+			<span>Google</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-rss">
+		<a href="http://kursuswebprogramming.com/feed/" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+		<script type="text/javascript">
+			</script>
+	<link rel='stylesheet' id='gglcptch-css'  href='http://kursuswebprogramming.com/wp-content/plugins/google-captcha/css/gglcptch.css?ver=1.44' type='text/css' media='all' />
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-includes/js/comment-reply.min.js?ver=5.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"http:\/\/kursuswebprogramming.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/kursuswebprogramming.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/kursuswebprogramming.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"28c5977d22","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"66206579be","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"2002","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-content/themes/Divi/js/custom.min.js?ver=3.19.14'></script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-content/themes/Divi/core/admin/js/common.js?ver=3.19.14'></script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
+<script async="async" type='text/javascript' src='http://kursuswebprogramming.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.2'></script>
+<script type='text/javascript' data-cfasync="false" async="async" defer="defer" src='https://www.google.com/recaptcha/api.js?render=explicit&#038;ver=1.44'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gglcptch = {"options":{"version":"v2","sitekey":"6Lf1si0UAAAAAK8WQpaE_X5b21PlP9CtUcLhuaNP","theme":"light","error":"<strong>Warning<\/strong>:&nbsp;More than one reCAPTCHA has been found in the current form. Please remove all unnecessary reCAPTCHA fields to make it work properly.","disable":0},"vars":{"visibility":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://kursuswebprogramming.com/wp-content/plugins/google-captcha/js/script.js?ver=1.44'></script>
+</body>
+</html>
